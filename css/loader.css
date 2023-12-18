@@ -1,0 +1,87 @@
+.infinity-wrapper {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 10000;
+
+    background-color: var(--bgc);
+}
+  
+  .infinity-container {
+    width: 13vh;
+    height: 13vh;
+    border-radius: 50%;
+    margin-top: 8vh;
+    animation: draw 2s linear infinite;
+    transform-origin: center;
+    position: relative;
+  }
+  .infinity-container .trace {
+    width: 95%;
+    height: 95%;
+    transform: rotate(-45deg);
+    border: 0.8vh solid var(--color-yellow-dark);
+    border-radius: 50%;
+    border-right: 1vh solid transparent;
+    border-bottom: 0.7vh solid transparent;
+  }
+  .infinity-container .pencil {
+    width: 17%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 41%;
+  }
+  .infinity-container .pencil .rubber {
+    background-color: #EFA2A2;
+    height: 10%;
+    border-radius: 20% 20% 0 0;
+    margin-top: -5px;
+  }
+  .infinity-container .pencil .metal {
+    background-color: #C4D5E0;
+    height: 12%;
+  }
+  .infinity-container .pencil .crayon {
+    display: flex;
+    height: 55%;
+  }
+  .infinity-container .pencil .crayon .crayon-left {
+    width: 33%;
+    background-color: #FFD87A;
+  }
+  .infinity-container .pencil .crayon .crayon-center {
+    width: 33%;
+    background-color: #FDCC66;
+  }
+  .infinity-container .pencil .crayon .crayon-right {
+    width: 33%;
+    background-color: #F7C456;
+  }
+  .infinity-container .pencil .pencil-top {
+    height: 15%;
+    clip-path: polygon(0 0, 30% 100%, 70% 100%, 100% 0);
+    background-color: #FAEEE0;
+  }
+  .infinity-container .pencil .pencil-tip {
+    background-color: var(--color-yellow-dark);
+    height: 8%;
+    clip-path: polygon(30% 0, 50% 100%, 70% 0);
+  }
+  
+  @keyframes draw {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }

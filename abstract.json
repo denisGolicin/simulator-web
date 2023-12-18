@@ -1,0 +1,71 @@
+{
+  "version": 0,
+  "dialogs": [
+      {
+          "id": 1,
+          "audio_url": "https://litec-soft.ru/SferaSchool/src/audio/audio1.wav",
+          "question": "Какое уравнение описывает закон всемирного тяготения?",
+          "answer": "Уравнение всемирного тяготения описывается как F = G * (m1 * m2) / r^2.",
+          "subject": "физика",
+          "class": 10
+      },
+      {
+          "id": 5,
+          "audio_url": "https://litec-soft.ru/SferaSchool/src/audio/audio2.wav",
+          "question": "Кто написал роман 'Преступление и наказание'?",
+          "answer": "Роман 'Преступление и наказание' написан Фёдором Достоевским.",
+          "subject": "литература",
+          "class": 11
+      },
+      {
+          "id": 13,
+          "audio_url": "https://litec-soft.ru/SferaSchool/src/audio/audio3.wav",
+          "question": "Какой элемент имеет атомный номер 6?",
+          "answer": "Элемент с атомным номером 6 - это углерод (C).",
+          "subject": "химия",
+          "class": 9
+      }
+  ],
+  "dialogs_test": [
+      {
+          "id": 1,
+          "audio_url": "https://litec-soft.ru/SferaSchool/src/audio/audio1.wav",
+          "question": "Какое уравнение описывает закон всемирного тяготения?",
+          "answer_correct": "Уравнение всемирного тяготения описывается как F = G * (m1 * m2) / r^2.",
+          "answers": [
+              "Это уравнение F = G / r^2.",
+              "Нет уравнения для тяготения.",
+              "F = G * m1 + m2."
+          ],
+          "subject": "физика",
+          "class": 10
+      },
+      {
+          "id": 5,
+          "audio_url": "https://litec-soft.ru/SferaSchool/src/audio/audio2.wav",
+          "question": "Кто написал роман 'Преступление и наказание'?",
+          "answer_correct": "Роман 'Преступление и наказание' написан Фёдором Достоевским.",
+          "answers": [
+              "Роман написан Александром Пушкиным.",
+              "Это анонимный автор.",
+              "Роман написан Львом Толстым."
+          ],
+          "subject": "литература",
+          "class": 11
+      },
+      {
+          "id": 13,
+          "audio_url": "https://litec-soft.ru/SferaSchool/src/audio/audio3.wav",
+          "question": "Какой элемент имеет атомный номер 6?",
+          "answer_correct": "Элемент с атомным номером 6 - это углерод (C).",
+          "answers": [
+              "Элемент с атомным номером 6 - это кислород (O).",
+              "Номер 6 - это азот (N).",
+              "Углерод не имеет атомного номера 6."
+          ],
+          "subject": "химия",
+          "class": 9
+      }
+  ]
+}
+

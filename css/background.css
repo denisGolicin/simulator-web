@@ -1,0 +1,51 @@
+#container {
+  width: 95%;
+  height: 100%;
+  background: #262c35;
+  position: relative;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 500px){
+  #container {
+  
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+.element-name {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5vw;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
+.element-number {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  font-size: 0.6vw;
+}
+
+.legend {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8vw;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+}

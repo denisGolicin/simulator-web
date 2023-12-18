@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
+    <link rel="stylesheet" type="text/css" href="css/background.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <meta name="description" content="Панель администратора SferaSchool">
+
+    <meta name="author" content="https://github.com/denisGolicin/">
+    <meta name="application-name" content="SferaSchool">
+    <meta name="reply-to" content="info@itdilab.ru">
+    <meta http-equiv="content-language" content="ru">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="src/web/meta/180.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="src/web/meta/32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="src/web/meta/16.png">
+
+	<link rel="shortcut icon" href="src/web/meta/logo.ico">
+
+	<meta property="og:image" content="src/meta/180.png">
+	<meta data-n-head="ssr" name="og:title" content="SferaSchool">
+	<meta data-n-head="ssr" name="apple-mobile-web-app-title" content="SferaSchool">
+	<meta data-n-head="ssr" name="og:url" content="src/web/meta/logo.ico">
+
+    <script src="http://d3js.org/d3.v3.js"></script>
+
+    <title>SferaSchool Web</title>
+
+</head>
+<body>
+
+    <div class="infinity-wrapper">
+        <div class="infinity-container">
+            <div class="trace"></div>
+            <div class="pencil">
+                <div class="rubber"></div>
+                <div class="metal"></div>
+                <div class="crayon">
+                <div class="crayon-left"></div>
+                <div class="crayon-center"></div>
+                <div class="crayon-right"></div>
+                </div>
+                <div class="pencil-top"></div>
+                <div class="pencil-tip"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper" id="container"></div>
+
+    <header>
+        <p id="title">Выбор режима</p>
+        <div class="header-buttons">
+            <button id="addSubject">Добавить предмет</button>
+            <button id="addClass">Добавить класс</button>
+            <button id="addDialog">Добавить диалог</button>
+            <button id="exitButton">Выход</button>
+            <button id="pageNext">Загрузить ещё</button>
+            <button id="backButton">Назад</button>
+        </div>
+    </header>
+
+    <div class="template-dialog-edit">
+        <div class="template-wrapper">
+            <p class="dialog-edit-title">Редактирование диалога №0</p>
+            <div class="input-dialog">
+
+                <p class="question-dialog-edit">Вопрос</p>
+                <textarea name="" id="" cols="10" rows="3">Текст</textarea>
+
+                <div class="input-dialog-checkbox">
+                    <p class="answer-dialog-edit">Ответ</p>
+                    <input type="checkbox">
+                </div>
+                <textarea name="" id="" cols="10" rows="3">Текст</textarea>
+
+                <div class="input-dialog-checkbox">
+                    <p class="answer-dialog-edit">Ответ</p>
+                    <input type="checkbox">
+                </div>
+                <textarea name="" id="" cols="10" rows="3">Текст</textarea>
+
+                <div class="input-dialog-checkbox">
+                    <p class="answer-dialog-edit">Ответ</p>
+                    <input type="checkbox">
+                </div>
+                <textarea name="" id="" cols="10" rows="3">Текст</textarea>
+
+                <div class="input-dialog-checkbox">
+                    <p class="answer-dialog-edit">Ответ</p>
+                    <input type="checkbox">
+                </div>
+                <textarea name="" id="" cols="10" rows="3">Текст</textarea>
+            </div>
+
+            <button id="editDialogRequest">Редактировать</button>
+            <button class="template-dialog-close">Закрыть</button>
+        </div>
+    </div>
+
+    <div class="template-add-subjects">
+        <div class="template-wrapper">
+
+            <p>Введите название предмета</p>
+
+            <input type="text" name="" id="inputSubjects" placeholder="Введите название предмета">
+
+            <button id="addSubjectsRequest">Добавить</button>
+            <button class="template-subjects-close">Закрыть</button>
+        </div>
+    </div>
+
+    <div class="template-add-classes">
+        <div class="template-wrapper">
+
+            <p class="class-name-title">Выберите класс из списка или создайте новый</p>
+            <select name="addClassesList" id="addClassesList">
+                <option value="">Выберите класс</option>
+            </select>
+
+            <input type="text" name="" id="inputClasses" placeholder="Введите название класса">
+
+            <button id="addClassesRequest">Добавить</button>
+            <button class="template-classes-close">Закрыть</button>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="window window-modes">
+            <div class="select-button select-teaching" style="justify-content: center">Обучение</div>
+            <div class="select-button select-testing" style="justify-content: center">Тестирование</div>
+            <div class="select-button select-statistics" style="justify-content: center">Статистика</div>
+        </div>
+
+        <div class="window window-subjects-list">
+            
+        </div>
+
+        <div class="window window-classes-list">
+          
+        </div>
+
+        <div class="window window-dialogs-list">
+            <input type="file" class="file-input">
+        </div>
+
+        <div class="window window-stats-list">
+
+        </div>
+        
+    </main>
+
+    <script src="js/loader.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/background.js"></script>
+</body>
+</html>
